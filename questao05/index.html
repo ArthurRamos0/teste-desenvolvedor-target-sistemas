@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversor de String</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .input-container {
+            margin-bottom: 20px;
+        }
+        .input-container input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+        .result-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .result-container p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inversor de String</h1>
+
+    <div class="container">
+        <!-- Caixa de entrada de texto -->
+        <div class="input-container">
+            <input type="text" id="inputString" placeholder="Digite a string aqui">
+        </div>
+
+        <!-- Botão para inverter a string -->
+        <div class="button-container">
+            <button onclick="invertString()">Inverter String</button>
+        </div>
+
+        <!-- Exibição do resultado -->
+        <div class="result-container">
+            <p id="originalString"></p>
+            <p id="invertedString"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

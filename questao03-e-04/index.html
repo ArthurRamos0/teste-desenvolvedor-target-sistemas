@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Faturamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .result {
+            margin: 20px 0;
+        }
+        .result h3 {
+            margin: 10px 0;
+        }
+        .result span {
+            font-weight: bold;
+        }
+        .percentuais {
+            margin-top: 30px;
+        }
+        .percentuais table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .percentuais th, .percentuais td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .percentuais th {
+            background-color: #f2f2f2;
+        }
+        .percentuais td {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Relatório de Faturamento</h1>
+
+        <!-- Resultados de Faturamento Diário -->
+        <div class="result">
+            <h3>Faturamento Diário:</h3>
+            <p>Menor Faturamento: <span id="menor-faturamento">Carregando...</span></p>
+            <p>Maior Faturamento: <span id="maior-faturamento">Carregando...</span></p>
+            <p>Média de Faturamento: <span id="media-faturamento">Carregando...</span></p>
+            <p>Dias Acima da Média: <span id="dias-acima-media">Carregando...</span></p>
+            <p>Valor Total Mensal: <span id="valor-total-mensal">Carregando...</span></p>
+        </div>
+
+        <!-- Resultados de Percentuais de Faturamento por Estado -->
+        <div class="percentuais">
+            <h3>Percentuais de Faturamento por Estado:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>Percentual</th>
+                    </tr>
+                </thead>
+                <tbody id="percentuais-estados">
+                    <tr><td>SP</td><td>Carregando...</td></tr>
+                    <tr><td>RJ</td><td>Carregando...</td></tr>
+                    <tr><td>MG</td><td>Carregando...</td></tr>
+                    <tr><td>ES</td><td>Carregando...</td></tr>
+                    <tr><td>Outros</td><td>Carregando...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
